@@ -1,0 +1,21 @@
+package chapter1;
+
+import java.util.*;
+
+public class InputOutput {
+	public static void main(String[] args) {
+		
+		//	콘솔 입력 
+		//	java.util.Scanner 클래스의 객체를 생성해서 nextXXX() 메서드로 입력을 받음
+		
+		Scanner sc = new Scanner(System.in);
+		int inputNumber = sc.nextInt();
+		
+		System.out.println("사용자가 입력한 수 : " + inputNumber);
+		
+		
+		
+		
+		sc.close();
+	}
+}

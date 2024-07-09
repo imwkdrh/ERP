@@ -1,5 +1,7 @@
 package chapter1;
 
+import java.util.*;
+
 public class Variable {
 	public static void main(String[] args) {
 	
@@ -63,6 +65,71 @@ public class Variable {
 		//	lowerCamelCase : 변수, 함수, 메서드 (첫문자를 소문자로 시작)
 		//	UPPER_SNAKE_CASE : 상수형 변수 (모든 문자를 대문자로 작성)
 		//	lower_snake_case : 변수, 함수, 메서드 (모든 문자를 소문자로 작성)
+		
+		
+		
+		//	상수(Constant)
+		//	초기화가 이루어지면 변경이 불가능한 변수
+		//	변수 선언 시에 데이터 타입 앞에 final 키워드를 붙여서 선언
+		//	final 데이터타입 변수명(상수형);
+		final int MAX;
+		MAX = 100;
+		
+		final int MIN = 0;
+		
+		//	상수는 초기화 이후 재할당 불가능
+		//	MAX = 999;
+		
+		
+		double size1 = 146.6 * 70.6;
+		
+		//	리터럴에 이름을 부여하기 위한 용도로 상수를 사용함
+		final double IPHONE_15_PRO_HEIGHT = 146.6;
+		final double IPHONE_15_PRO_WIDTH = 70.6;
+		
+		double size2 = IPHONE_15_PRO_HEIGHT * IPHONE_15_PRO_WIDTH;
+		
+		//	코드의 유지보수성을 향상 시키기위해 사용됨
+		final int HEIGHT = 15;
+		
+		int sum = HEIGHT +20;
+		int multi = HEIGHT * 20;
+		
+		//	리터럴 상수 : 값 그 자체 (코드 상에서)
+		//	int age = 32; 라는 구문에서 '32'가 리터럴;
+		//	32 = 10;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 }

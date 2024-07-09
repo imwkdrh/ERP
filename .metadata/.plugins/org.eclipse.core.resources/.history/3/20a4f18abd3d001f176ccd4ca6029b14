@@ -1,0 +1,17 @@
+package chapter1;
+
+import java.util.*;
+
+public class InputOutput {
+	public static void main(String[] args) {
+		
+		//	콘솔 입력 
+		//	
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		sc.close();
+	}
+}
