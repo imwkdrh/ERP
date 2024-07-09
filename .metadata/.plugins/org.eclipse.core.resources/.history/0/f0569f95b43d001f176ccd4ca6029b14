@@ -50,13 +50,9 @@ public class Variable {
 		//	int int;
 		
 		//	비문법상 규칙 (암묵적 룰)
-		//	web site address
 		//	1. 띄워쓰기 규칙
 		//	- Camel Case : 띄워쓰기를 표한할 때 띄워쓰기를 제거하고 바로 뒤 문자를 대문자로 표현
-		String webSiteAddress;
-		//	- Snake Case : 띄워쓰기를 표한할 때 띄워쓰기 자리에 _로 표현
-		String web_site_address;
-		
+		String web site;
 		
 		
 }
