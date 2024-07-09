@@ -19,5 +19,8 @@ public class InputOutput {
 		
 		//	시스템으로부터 받은 입력 리소스를 반환
 		sc.close();
+		
+		
+		
 	}
 }
