@@ -58,7 +58,6 @@ public class DataType {
 		//	double : 8byte(64bit)의 크기를 가지는 실수형 데이터 타입
 		//	소수점 15-17째 자리에서 오차가 발생
 		double double1 = 3.14159265358979323846;
-		System.out.println(double1);
 		
 		
 		
