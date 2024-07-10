@@ -1,0 +1,58 @@
+package chapter1;
+
+public class Operator {
+	public static void main(String[] args) {
+		
+		int a = 15;
+		int b = 7;
+		double c = 15.0;
+		double d = 7.0;
+		
+		int intResult = 0;
+		double doubleResult = 0.0;
+		//	산술 연산자 : 숫자 디이터에 대해 사칙연산을 수행
+		
+		//	더하기 : +
+		//	좌항에 우항을 더한 값을 반환
+		intResult = a+b;
+		System.out.println(intResult);
+		doubleResult = c+d;
+		System.out.println(doubleResult);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

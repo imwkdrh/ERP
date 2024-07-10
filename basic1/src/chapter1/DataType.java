@@ -1,5 +1,7 @@
 package chapter1;
 
+import java.util.Arrays;
+
 public class DataType {
 	public static void main(String[] args) {
 		
@@ -98,8 +100,124 @@ public class DataType {
 		
 		
 		//	배열 : 동일한 타입의 변수를 묶어서 저장하는 컨테이너
-		//	new 연산자를 이용해서 생성 해야함
-		// 한선 생성된 배열의 크기는 변경할 수 없음
+		//	new 연산자를 이용해서 생성 해야함(주소가 들어감)
+		//	한번 생성된 배열의 크기는 변경할 수 없음
+		
+		
+		//	배열 변수 선언
+		//	데이터타입[] 배열변수명;
+		//	배열 생성
+		//	new 데이터타입[배열의 길이];
+		int[] numbers;
+		//	numbers = 3;
+		numbers = new int[5];
+		
+		//초기화
+		int[] numbers2 = {1,2,3,4,5};	
+		int[] numbers3 = new int[] {1, 2, 3, 4, 5};
+		
+		System.out.println(numbers);
+		System.out.println(numbers2);
+		System.out.println(numbers3);
+		System.out.println(Arrays.toString(numbers3));
+		
+		//	배열의 요소에 접근할 때는 '인덱스' 사용
+		//	인덱스는 0번부터 시작, 마지막 인덱스는 길이의 -1번
+		int item = numbers3[2];
+		System.out.println(item);
+		
+		numbers3[0] = 9;
+		item = numbers3[0];
+		System.out.println(item);
+		
+		//	인덱스 범위를 초과하는 인덱스에 접근할 시 예외발생
+		//	System.out.println(numbers3[99]);
+		
+		//	배열의 길이를 확인하고자 할땐 .length를 사용
+		System.out.println(numbers3.length);
+		
+		
+		int[] example1 = new int[] {1,2,3};
+		int[] example2 = example1;
+		
+		System.out.println(example1);
+		System.out.println(example2);
+		
+		example1[1] = 99;
+		System.out.println(example1[1]);
+		System.out.println(example2[1]);
+		
+		char[] chars1 = {'a','p','p','l','e'};
+		System.out.println(chars1);
+		
+		
+		
+		//	String : 문자의 배열(문자열)을 표현하는데 사용되는 참조형 데이터 타입
+		//	선언
+		//	String 변수명;
+		// 	생성
+		//	new String();
+		//	초기화
+		//	변수명 = "문자열";
+		String string1;
+		string1 = new String();
+		string1 = "apple";
+		System.out.println(string1);
+		
+		
+		//	문자열(String)의 주요 기능
+		String statement = "  My name is loki  ";
+		
+		//	1. 문자열 결합
+		//	+ 혹은 concat(문자열)으로 두 문자열을 연결할 수 있음
+		System.out.println(statement + "@@@");
+		System.out.println(statement.concat("!!!"));
+		
+		//	2. 문자열 비교
+		//	equals(문자열): 두 문자열이 동일한지 비교
+		//	compareTo(문자열) : 두 문자열을 사전순으로 비교(대소문자 구분)
+		//	compareToIgnoreCase(문자열) : 두 문자열을 사전순으로 비교(대소구문 구분x)
+		System.out.println(statement.equals("  My name is loki  "));
+		System.out.println(statement.compareTo("  Zy name is loki  "));
+		
+		//	3. 문자열 길이
+		//	length() : 문자열의 길이를 반환
+		System.out.println(statement.length());
+		
+		//	4. 문자열 반환
+		//	toUpperCase() : 모든 문자를 대문자로 변경
+		System.out.println(statement.toUpperCase());
+		//	toLowerCase() : 모든 문자를 소문자로 변경 
+		System.out.println(statement.toLowerCase());
+		//	trim() : 문자열의 앞뒤 공백을 제거
+		System.out.println(statement.trim());
+		
+		//	5. 문자열 찾기
+		//	indexOf(문자열) : 찾고자 하는 처음 찾은 위치의 인덱스 번호를 반환
+		//	lastIndexOf(문자열) : 찾고자 하는 문자열의 마지막 찾은 위치의 인덱스 번호를 반환
+		statement = "내가 그린 기린 그림은 잘 그린 기린 그림이고 네가 그린 기린 그림은 잘 못 그린 기린 그림이다.";
+		System.out.println(statement.indexOf("기린"));
+		System.out.println(statement.indexOf("사자 "));
+		System.out.println(statement.lastIndexOf("기린"));
+		System.out.println(statement.lastIndexOf("사자"));
+		
+		//	6. 부분 문자열
+		//	substring(시작인덱스), substring(시작인덱스, 종료인덱스) : 문자열을 원하는 크기만큼 추출
+		System.out.println(statement.substring(26));
+		System.out.println(statement.substring(26, 31));
+		
+		
+		//	참조형 데이터 타입
+		//	주소를 가지고 있는 변수의 데이터 타입
+		//	null을 가질 수 있음 (null : 아무것도 지정되지 않은 상태)
+		//	배열, 클래스, 인터페이스, 열거형이 참조형 데이터 타입에 속함
+		String string2 = null;
+		System.out.println(string2.trim());
+		
+		
+		
+		
+		
 		
 		
 		
