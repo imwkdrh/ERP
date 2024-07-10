@@ -116,22 +116,10 @@ public class Operator {
 		//	작다, 작거나 같다 연산
 		//	< : 좌항이 우항보다 작으면 true, 크면 false;
 		//	<= : 좌항이 우항보다 작거나 같으면 true, 크면 false;
+		//	> : 좌항이 우항보다 작으면 false, 크면 true;
 		booleanResult = a < c;
 		System.out.println(booleanResult);
-		booleanResult = a <= c;
-		System.out.println(booleanResult);
 		
-		//	크다, 크거나 같다 연산
-		//	> : 좌항이 우항보다 크면 false, 크면 true;
-		//	>= : 좌항이 우항보다 크거나 같으면 false, 크면 true;
-		booleanResult = a > c;
-		System.out.println(booleanResult);
-		booleanResult = a >= c;
-		System.out.println(booleanResult);
-		
-		
-		
-		//	논리 연산자 : 
 		
 		
 		

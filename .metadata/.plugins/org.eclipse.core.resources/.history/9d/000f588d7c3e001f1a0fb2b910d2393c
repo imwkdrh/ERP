@@ -88,50 +88,16 @@ public class Operator {
 		
 		//	일반 대입 연산자 : =
 		//	좌항에 우항의 연산 결과를 할당
-		//	좌항이 일반 변수와 상수형 변수 모두 올 수 있음
-		//	단, 상수형 변수는 초기화 시 사용가능
 		number = 10 + 5;
 		
 		//	복합 대입 연산자 : 타연산자=
 		//	좌항에 좌항과 우항을 연산한 결과를 할당
-		//	좌항은 반드시 초기화 되어있어야 한다
-		//	좌항은 반드시 일반 변수어야 한다 (상수 불가능)
 		number += 3;
-		System.out.println(number); 	// 18
+		System.out.println(number); 	//18
 		number /=7;
-		System.out.println(number); 	// 2
+		System.out.println(number); 	//2
 		
 		
-		//	비교연산자 : 좌항과 우항을 비교하여 그 결과를 논리 값으로 반환
-		boolean booleanResult;
-		
-		//	같다, 다르다 연산
-		//	== : 좌항이 우항과 같으면 true, 다르면 false;
-		//	!= : 좌항이 우항과 같으면 false, 다르면 true;
-		booleanResult = a ==c;
-		System.out.println(booleanResult);
-		booleanResult = a !=c;
-		System.out.println(booleanResult);
-		
-		//	작다, 작거나 같다 연산
-		//	< : 좌항이 우항보다 작으면 true, 크면 false;
-		//	<= : 좌항이 우항보다 작거나 같으면 true, 크면 false;
-		booleanResult = a < c;
-		System.out.println(booleanResult);
-		booleanResult = a <= c;
-		System.out.println(booleanResult);
-		
-		//	크다, 크거나 같다 연산
-		//	> : 좌항이 우항보다 크면 false, 크면 true;
-		//	>= : 좌항이 우항보다 크거나 같으면 false, 크면 true;
-		booleanResult = a > c;
-		System.out.println(booleanResult);
-		booleanResult = a >= c;
-		System.out.println(booleanResult);
-		
-		
-		
-		//	논리 연산자 : 
 		
 		
 		
