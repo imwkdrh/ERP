@@ -70,31 +70,11 @@ public class Control {
 		
 		System.out.println("=================");
 		
-		boolean isMiddleMan = (age>=30) && (gender.equals("남자"));
+		boolean isMiddleMan = (age>=30) && (gender.equals("남자")));
 		if(isMiddleMan)  System.out.println("30대 중년남성입니다.");
 		else System.out.println("일반인 입니다.");		
 		
 		System.out.println("=================");
-		
-		//	점수가 90점 이상이면 "A" 출력
-		//	점수가 80점 이상이면 "B" 출력
-		//	점수가 70점 이상이면 "C" 출력
-		//	점수가 60점 이상이면 "D" 출력
-		//	점수가 60점 미만이면 "F" 출력
-		
-		score = 89;
-		
-		if(90<=score) System.out.println("A");
-		else if(80<=score) System.out.println("B");
-		else if(70<=score) System.out.println("C");
-		else if(60<=score) System.out.println("D");
-		else System.out.println("F");
-				
-		System.out.println("=================");
-
-		
-		
-		
 		
 		
 		

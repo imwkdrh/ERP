@@ -82,14 +82,20 @@ public class Control {
 		//	점수가 60점 이상이면 "D" 출력
 		//	점수가 60점 미만이면 "F" 출력
 		
-		score = 89;
+		score = 79;
 		
 		if(90<=score) System.out.println("A");
-		else if(80<=score) System.out.println("B");
-		else if(70<=score) System.out.println("C");
-		else if(60<=score) System.out.println("D");
-		else System.out.println("F");
+		else 
+			if(80<=score) System.out.println("B");
+			else 
+				if(70<=score) System.out.println("C");
+				else 
+					if(60<=score) System.out.println("D");
+					else System.out.println("F");
 				
+				
+			
+		
 		System.out.println("=================");
 
 		
