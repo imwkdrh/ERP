@@ -9,6 +9,7 @@ public class Practice1 {
 	//	입력받은 숫자를 numbers라고하는 배열에 저장
 	//	만약 사용자가 0미만의 정수를 입력하면
 	//	사용자가 입력한 정수들을 모두 출력하고 프로그램을 종료
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -26,10 +27,6 @@ public class Practice1 {
 			}
 			newNumbers[newNumbers.length-1]=inputNumber;
 			numbers = newNumbers;
-			
-			
-			
-			
 	
 		}
 		

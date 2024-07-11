@@ -1,0 +1,12 @@
+package chapter1.practice;
+
+public class Practice3 {
+	public static void main(String[] args) {
+		
+		//	문자열 자르기
+		//	사용자로부터 시작인덱스와 종료인덱스를 입력받고
+		//	입력받은 시작 인덱스와 종료 인덱스까지 문자열을 잘라서 자른 문자열을 출력
+		
+		
+	}
+}
