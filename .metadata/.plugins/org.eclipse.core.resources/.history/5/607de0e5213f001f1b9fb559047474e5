@@ -25,7 +25,7 @@ public class ControllSwitch {
 		}
 		
 		*/
-		//	git체크*
+		
 		//	number가 0이면 A,B,C를 출력
 		//	1 B,C
 		//	2 C
@@ -37,11 +37,11 @@ public class ControllSwitch {
 		int number;
 		number = sc.nextInt();
 		switch (number) {
-		case 0: System.out.print("A");
-		case 1: System.out.print("B");
+		case 0: System.out.println("A,B,C"); break;
+		case 1: System.out.println("B,C");break;
 		case 2: System.out.println("C");break;
-		case 3: System.out.print("D");
-		case 4: System.out.print("E");
+		case 3: System.out.println("D,E,F");break;
+		case 4: System.out.println("E,F");break;
 		
 		default:System.out.println("F");
 			
