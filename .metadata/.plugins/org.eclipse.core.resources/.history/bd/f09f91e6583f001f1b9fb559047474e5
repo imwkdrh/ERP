@@ -1,0 +1,17 @@
+package chapter2;
+
+//	클래스 : 공통된 속성과 기능을 정의해둔 것
+//	[접근제어자] class 클래스명 { 속성, 기능 }
+class ExampleClass1{
+	//	속성 : 클래스가 가질 수 있는 정보나 상태
+	//	일반적으로 변수로 표현
+}
+
+public class ClassAndObject {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+}
