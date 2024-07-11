@@ -153,16 +153,12 @@ public class DataType {
 		
 		
 		//	String : 문자의 배열(문자열)을 표현하는데 사용되는 참조형 데이터 타입
-		
 		//	선언
 		//	String 변수명;
-		
 		// 	생성
 		//	new String();
-		
 		//	초기화
 		//	변수명 = "문자열";
-		
 		String string1;
 		string1 = new String();
 		string1 = "apple";

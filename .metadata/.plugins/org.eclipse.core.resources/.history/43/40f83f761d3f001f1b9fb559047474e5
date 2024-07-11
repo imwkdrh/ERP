@@ -93,7 +93,12 @@ public class Control {
 		System.out.println("=================");
 
 		
-		
+		int day = 0;
+		switch(day){
+		case 1:{
+			System.out.println("월");
+		}
+		}
 		
 		
 		
