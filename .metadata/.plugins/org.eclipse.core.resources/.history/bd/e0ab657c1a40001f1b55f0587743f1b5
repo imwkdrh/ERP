@@ -9,9 +9,6 @@ class Human1{
 	int age;
 	String gender;
 	
-	//	final로 선언된 인스턴스 변수는 생성자에서 반드시 초기화 해야함
-	//	즉, 필수 값
-	final String address;
 	
 	//	만약 다른 생성자(매개변수가 있는 생성자)가 존재한다면
 	//	기본 생성자는 자동으로 생성되지 않음
@@ -24,14 +21,12 @@ class Human1{
 		name = "홍길동";
 		age = 20;
 		gender="남";
-		address="부산";
 	}
 	Human1(String name1, int age1, String gender1){
 		//	의존성을 외부에서 주입하는 행위
 		name=name1;
 		age=age1;
 		gender=gender1;
-		address="부산";
 	}
 	
 	void great() {

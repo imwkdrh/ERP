@@ -24,14 +24,12 @@ class Human1{
 		name = "홍길동";
 		age = 20;
 		gender="남";
-		address="부산";
 	}
 	Human1(String name1, int age1, String gender1){
 		//	의존성을 외부에서 주입하는 행위
 		name=name1;
 		age=age1;
 		gender=gender1;
-		address="부산";
 	}
 	
 	void great() {
