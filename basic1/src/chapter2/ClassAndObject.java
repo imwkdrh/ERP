@@ -7,20 +7,35 @@ class ExampleClass1{
 	//	일반적으로 변수로 표현
 	
 	//	인스턴스 변수 : 각 인스턴스마다 독립적으로 값을 가지는 변수
+	//	반드시 인스턴스가 생성된 후에 사용할 수 있음
 	int attribute1;
 	double attribute2;
 	
 	//	클래스 변수 : 해당 클래스로 생성된 모든 인스턴스가 공유하는 변수
 	//	필드 앞에  static 키워드를 사용하여 지정
+	//	인스턴스 없이 클래스로 직접 접근할 수 있음
+	static int staticAttribute;
 	
 	//	기능 : 클래스가 가질 수 있는 행동이나 작업 (메서드)
 	//	
 	//	[접근제어자] 반환타입 메서드명 (매개변수타입 매개변수명[, ...]) 메서드 선언부
 	//	{ 메서드 기능 구현 } 메서드 구현부
+	
+	//	인스턴스 메서드 : 인스턴스를 생성한 후 사용할 수 있는 메서드 (ex Class method = new Class();)
+	//	인스턴스 필드를 사용하는 기능에 대해서 인스턴스 메서드를 작성
 	int method1 (int arg1) {
 		//	기능 구현
 		//	반환타입이 void가 아니면 반드시 return으로 결과값을 반환해야 한다
 		return arg1*arg1;
+	}
+	
+	//	클래스 메서드 : 인스턴스 생성없이 클래스로만 호출 가능한 메서드
+	//	반환타입 앞에 static 키워드를 붙여서 사용
+	//	인스턴스 필드를 사용하지 않는 메서드에 주로 사용됨
+	//	인스턴스 필드를 사용할 수 없음
+	static void staticMethod() {
+		//System.out.println(attribute1);
+		//method1(5);
 	}
 }
 
@@ -84,15 +99,67 @@ class SmartPhone{
 class Korean{
 	String name;
 	int age;
-	String nationality="대한민국";
+	static String nationality="대한민국";
 }
 
+
+//	삼각함수
+//	빗변 구하기
+//	둘레 구하기
+//	sin 구하기
+//	cos 구하기
+//	tan 구하기
+
+class TriangleMath{
+	
+	//	PI와 getCircleArea(double)은 SRP원칙에 위배됨
+	static final double PI = 3.1415;
+	
+	static double getCircleArea(double radius) {
+		if(radius <= 0)return 0;
+		double area= radius * radius * PI;
+		return area;
+		
+	}
+	
+	static double getHypotenuse(double bottom, double height) {
+		if(bottom <= 0 || height <=0) {
+			return 0;
+		}
+		
+		double hypotenuse = Math.sqrt((Math.pow(bottom, 2) + Math.pow(height, 2)));
+		return hypotenuse;
+	}
+	
+	static double getCircumfence(double bottom, double height, double  hypotenuse) {
+		if(bottom <= 0 || height <=0 || hypotenuse <= 0)return 0;
+		double circumfence=bottom+height+hypotenuse;
+		return circumfence;
+	}
+	
+	static double getSin(double hypotenuse, double height) {
+		if( height <=0 || hypotenuse <= 0)return 0;
+		double sin = height/hypotenuse;
+		return sin;
+	}
+	static double getCos(double hypotenuse, double bottom) {
+		if( bottom <=0 || hypotenuse <= 0)return 0;
+		double cos = bottom/hypotenuse;
+		return cos;
+	}
+	static double getTan(double bottom, double height) {
+		if( height <=0 || bottom <= 0)return 0;
+		double tan = height/bottom;
+		return tan;
+	}
+	
+}
 
 public class ClassAndObject {
 	
 	public static void main(String[] args) {
 		
-		//	인스턴스 : 특정 클래스로 저으이된 것을 실체화한 객체
+		//	인스턴스 : 특정 클래스로 정의된 것을 실체화한 객체
 		//	 클래스명 참조변수명 = new 클래스명();
 		ExampleClass1 instance1 = new ExampleClass1();
 		ExampleClass1 instance2 = new ExampleClass1();
@@ -107,10 +174,16 @@ public class ClassAndObject {
 		
 		//	인스턴스가 가지고 있는 메서드 호출 방법
 		//	인스턴스.메서드명(매개변수...);
-		int methodResult = instance1.method1(5);
+		int methodResult = instance1.method1(10);
 		System.out.println(methodResult);
 		
-		
+		instance1.staticAttribute=10;
+		System.out.println(instance1.staticAttribute);
+		System.out.println(instance2.staticAttribute);
+		instance2.staticAttribute=33;
+		System.out.println(instance1.staticAttribute);
+		System.out.println(instance2.staticAttribute);
+		System.out.println(ExampleClass1.staticAttribute);
 		
 		
 		System.out.println("=====================");
@@ -149,6 +222,12 @@ public class ClassAndObject {
 		System.out.println(korean1.nationality);
 		System.out.println(korean2.nationality);
 		
+		
+		
+		double bottom = 3;
+		double height = 4;
+		double hypotenuse = TriangleMath.getHypotenuse(bottom, height);
+		System.out.println(hypotenuse);
 		
 		
 		
