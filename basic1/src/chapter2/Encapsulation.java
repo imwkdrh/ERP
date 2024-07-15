@@ -16,9 +16,7 @@ class Player{
 	public String getBirth() {
 		return birth;
 	}
-	public void setBirth(String birth) {
-		this.birth = birth;
-	}
+	
 	public int getBody() {
 		return body;
 	}
@@ -28,9 +26,7 @@ class Player{
 	public String getAcademic() {
 		return academic;
 	}
-	public void setAcademic(String academic) {
-		this.academic = academic;
-	}
+	
 	public String getCareer() {
 		return career;
 	}
