@@ -5,4 +5,10 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="chapter2.SmartPhone"/>
+    <fullyQualifiedTypeName name="chapter2.Korean"/>
+    <fullyQualifiedTypeName name="chapter2.ExampleClass1"/>
+    <fullyQualifiedTypeName name="chapter2.TriangleMath"/>
+    <fullyQualifiedTypeName name="chapter2.ExampleClass2"/>
+    <fullyQualifiedTypeName name="chapter2.MyMath"/>
+    <fullyQualifiedTypeName name="chapter2.Human1"/>
 </qualifiedTypeNameHistroy>
