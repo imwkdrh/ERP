@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="chapter1.Control"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="chapter2.SmartPhone"/>
     <fullyQualifiedTypeName name="chapter2.Korean"/>
     <fullyQualifiedTypeName name="chapter2.ExampleClass1"/>
@@ -11,4 +10,19 @@
     <fullyQualifiedTypeName name="chapter2.ExampleClass2"/>
     <fullyQualifiedTypeName name="chapter2.MyMath"/>
     <fullyQualifiedTypeName name="chapter2.Human1"/>
+    <fullyQualifiedTypeName name="chapter2.Developer"/>
+    <fullyQualifiedTypeName name="chapter2.SalesMan"/>
+    <fullyQualifiedTypeName name="chapter2.AccessModifier"/>
+    <fullyQualifiedTypeName name="chapter2.FinalMethodClass"/>
+    <fullyQualifiedTypeName name="chapter2.StaticClass"/>
+    <fullyQualifiedTypeName name="chapter2.Player"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="chapter2.Developer2"/>
+    <fullyQualifiedTypeName name="chapter2.SalesMan2"/>
+    <fullyQualifiedTypeName name="chapter2.Police2"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Area"/>
+    <fullyQualifiedTypeName name="chapter2.AreaCalculation"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="chapter2.MyCalculation"/>
+    <fullyQualifiedTypeName name="chapter2.Statement"/>
 </qualifiedTypeNameHistroy>
