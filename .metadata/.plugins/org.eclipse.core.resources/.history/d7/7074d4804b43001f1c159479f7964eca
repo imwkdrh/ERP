@@ -1,0 +1,17 @@
+package chapter3;
+
+import java.util.Random;
+
+public class package3 {
+	public static void main(String[] args) {
+		
+		//	Random 클래스 : 난수를 생성하는 클래스
+		Random random = new Random();
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+		
+	}
+}
