@@ -63,17 +63,9 @@ public class Package2 {
 		//	HashSet 구현 클래스 : 검색이 빠름
 		set = new HashSet<String>();
 		//	TreeSet 구현 클래스 : 요소를 정렬해서 추가
-		set = new TreeSet<String>();
-		
-		//	add() : Set에 요소를 추가함 만약 동일한 요소가 존재한다면 추가하지 않음
-//		set.add("apple");
-//		System.out.println(set);
-		set.add("banana");
-		System.out.println(set);
-		set.add("apple");
-		System.out.println(set);
+		set = new TreeSet<String>()
 
-		//	contains() : Set에 특정 요소가 존재하는지 확인
+		
 		
 		
 		

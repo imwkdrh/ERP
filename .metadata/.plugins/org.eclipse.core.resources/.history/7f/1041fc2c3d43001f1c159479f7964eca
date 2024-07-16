@@ -1,11 +1,8 @@
 package chapter3;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
 
 public class Package2 {
 	
@@ -42,38 +39,11 @@ public class Package2 {
 		//	List 인덱스 범위를 벗어나는 인덱스를 지정할 수 없음
 		list.set(1, -100);
 		System.out.println(list);
+		
 		//	remove() : List의 특정 인덱스 요소를 제거
-		list.remove(1);
-		System.out.println(list);
+		list.remove(number);
 		
-		List<String> stringList = new ArrayList<String>();
-		stringList.add("apple");
-		stringList.add("banana");
-		stringList.add("apple");
-		System.out.println(stringList);
-		stringList.remove("apple");
-		System.out.println(stringList);
 		
-		//	size() : List의 크기를 반환
-		System.out.println(list.size());
-		
-		//	Set : 데이터를 저장할 때 중복을 허용하지 않고 순서가 존재하지 않는 데이터 구조 (집합)
-		Set<String> set;
-		
-		//	HashSet 구현 클래스 : 검색이 빠름
-		set = new HashSet<String>();
-		//	TreeSet 구현 클래스 : 요소를 정렬해서 추가
-		set = new TreeSet<String>();
-		
-		//	add() : Set에 요소를 추가함 만약 동일한 요소가 존재한다면 추가하지 않음
-//		set.add("apple");
-//		System.out.println(set);
-		set.add("banana");
-		System.out.println(set);
-		set.add("apple");
-		System.out.println(set);
-
-		//	contains() : Set에 특정 요소가 존재하는지 확인
 		
 		
 		

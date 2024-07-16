@@ -73,7 +73,7 @@ public class Package2 {
 		set.add("apple");
 		System.out.println(set);
 
-		//	contains() : Set에 특정 요소가 존재하는지 확인
+		
 		
 		
 		
