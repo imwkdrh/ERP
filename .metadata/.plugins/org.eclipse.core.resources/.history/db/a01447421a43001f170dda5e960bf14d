@@ -68,7 +68,7 @@ public class Polymorphism {
 		
 		System.out.println("==========================");
 		
-		FootballPlayer footballplayer3 =  (FootballPlayer)footballplay;
+		FootballPlayer footballplayer3 = (FootballPlayer)footballplay;
 		footballplayer3.kick();
 		footballplayer3.foul();
 		System.out.println(footballplayer3.name);
