@@ -48,7 +48,7 @@ public class package3 {
 		System.out.println(year);
 		int month = now.getMonthValue();
 		System.out.println(month);
-		int day = now.getDayOfMonth();
+		int day = now.getDayOfMonth()();
 		System.out.println(day);
 		
 		

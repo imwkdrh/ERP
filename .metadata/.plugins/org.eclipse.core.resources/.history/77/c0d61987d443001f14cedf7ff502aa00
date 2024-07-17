@@ -37,19 +37,6 @@ public class package3 {
 		
 		//	현재 날짜 및 시간의 인스턴스 생성
 		LocalDateTime now = LocalDateTime.now();
-		System.out.println(now);
-		//	특정 날짜 및 시간의 인스턴스 생성
-		LocalDateTime date1 = LocalDateTime.of(2024, 7, 9, 9, 0, 0); //(년, 월 ,일, 시, 분, 초)
-		System.out.println(date1);
-		
-		//	특정 날짜 및 시간의 요소 불러오기
-		//	getXXX();
-		int year = now.getYear();
-		System.out.println(year);
-		int month = now.getMonthValue();
-		System.out.println(month);
-		int day = now.getDayOfMonth();
-		System.out.println(day);
 		
 		
 		

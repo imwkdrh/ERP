@@ -1,6 +1,5 @@
 package chapter3;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Random;
 import java.util.UUID;
@@ -31,45 +30,5 @@ public class package3 {
 		Date dateNow = new Date();
 		System.out.println(dateNow);
 		System.out.println(dateNow.getDate());
-		
-		//	LocalDateTime 클래스 : Java 8부터 Date를 대체하기 위해 사용되는 클래스
-		//	LocalDate 클래스, LocalTime 클래스, LocalDateTime 클래스
-		
-		//	현재 날짜 및 시간의 인스턴스 생성
-		LocalDateTime now = LocalDateTime.now();
-		System.out.println(now);
-		//	특정 날짜 및 시간의 인스턴스 생성
-		LocalDateTime date1 = LocalDateTime.of(2024, 7, 9, 9, 0, 0); //(년, 월 ,일, 시, 분, 초)
-		System.out.println(date1);
-		
-		//	특정 날짜 및 시간의 요소 불러오기
-		//	getXXX();
-		int year = now.getYear();
-		System.out.println(year);
-		int month = now.getMonthValue();
-		System.out.println(month);
-		int day = now.getDayOfMonth();
-		System.out.println(day);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

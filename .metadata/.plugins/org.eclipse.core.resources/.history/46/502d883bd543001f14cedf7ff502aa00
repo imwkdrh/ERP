@@ -45,11 +45,6 @@ public class package3 {
 		//	특정 날짜 및 시간의 요소 불러오기
 		//	getXXX();
 		int year = now.getYear();
-		System.out.println(year);
-		int month = now.getMonthValue();
-		System.out.println(month);
-		int day = now.getDayOfMonth();
-		System.out.println(day);
 		
 		
 		
