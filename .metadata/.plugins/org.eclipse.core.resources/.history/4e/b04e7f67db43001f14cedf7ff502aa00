@@ -3,7 +3,6 @@ package chapter3;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Random;
 import java.util.UUID;
@@ -90,14 +89,6 @@ public class package3 {
 				
 		//	y : 연도, M : 월, d : 일, a : 오전오후, H : 시간(24), h : 시간(12), m : 분, s : 초, E: 요일
 		//	오전 10:23 2024-07-17
-		SimpleDateFormat computerFormat = new SimpleDateFormat("a hh:mm:ss yyyy-MM-dd");
-		String computerDate = computerFormat.format(dateNow);
-		System.out.println(computerDate);
-		
-		//	LocalDateTime을 String으로 변경
-		computerDate = now.format(DateTimeFormatter.ofPattern("a hh:mm:ss yyyy-MM-dd"));
-		System.out.println(computerDate);
-		
 		
 		
 		

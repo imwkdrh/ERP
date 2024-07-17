@@ -1,14 +1,9 @@
 package chapter3;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Random;
 import java.util.UUID;
-
-import javax.swing.text.SimpleAttributeSet;
 
 public class package3 {
 	public static void main(String[] args) {
@@ -59,44 +54,12 @@ public class package3 {
 		//	특정 날짜 및 시간의 요소 변경하기
 		//	withXXX();
 		//	인스턴스가 직접 변경되지 않고 변경한 값을 반환
-		now = now.withYear(2025).withHour(21);
-		System.out.println(now);
-		
-		//	날짜 및 시간 계산하기
-		//	특정 요소에 값을 더하거나 빼기
-		//	plusXXX(), minusXXX()
-		//	인스턴스가 직접 변경되지 않고 변경된 값을 반환
-		now = now.plusDays(20).minusHours(22);
+		now.withYear(2025);
 		System.out.println(now);
 		
 		
-		//	LocalDateTime을 Date로 변경
-		//	Date  클래스의 from 메서드를 이용
-		// now.atZone(ZoneId.systemDefault()).toInstant();
-		Date localToDate = Date.from(now.atZone(ZoneId.systemDefault()).toInstant());
-		System.out.println(localToDate);
 		
-		//	Date를 LocalDateTime으로 변경
-		//	Date 인스턴스의 toInstant(), toLocalDateTime()
-		LocalDateTime dateToLocal = 
-				localToDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-		System.out.println(dateToLocal);
 		
-		//	Date를 String으로 변경
-		//	SimpleDateFormat 클래스를 사용하여 지정한 포맷의 문자열로 변경 가능
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
-		String stringDate = simpleDateFormat.format(dateNow);
-		System.out.println(stringDate);
-				
-		//	y : 연도, M : 월, d : 일, a : 오전오후, H : 시간(24), h : 시간(12), m : 분, s : 초, E: 요일
-		//	오전 10:23 2024-07-17
-		SimpleDateFormat computerFormat = new SimpleDateFormat("a hh:mm:ss yyyy-MM-dd");
-		String computerDate = computerFormat.format(dateNow);
-		System.out.println(computerDate);
-		
-		//	LocalDateTime을 String으로 변경
-		computerDate = now.format(DateTimeFormatter.ofPattern("a hh:mm:ss yyyy-MM-dd"));
-		System.out.println(computerDate);
 		
 		
 		
