@@ -2,6 +2,7 @@ package chapter3;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -98,7 +99,8 @@ public class package3 {
 		computerDate = now.format(DateTimeFormatter.ofPattern("a hh:mm:ss yyyy-MM-dd"));
 		System.out.println(computerDate);
 		
-		
+		Month month2 = now.getMonth();
+		System.out.println(month2);
 		
 		
 		
